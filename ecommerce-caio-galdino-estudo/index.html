@@ -5,15 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <header>
+  <section id="carrinho" class="fixed top-0 right-[-360px] bg-blue-200 h-screen w-[360px]">
+    <div id="cabecalho-carrinho" class="flex justify-between m-4">
+      <p>Meu Carrinho</p>
+      <button id="fechar-carrinho"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    <section id="prod-carrinho">
+      <p>sobretudo</p>
+      <p>relógio</p>
+      <p>carteira</p>
+    </section>
+    <p id="preco-total"></p>
+    <button class="bg-slate-200 p-1">Finalizar compra</button>
+  </section>
 
+  <header class="flex justify-between bg-blue-200 p-2">
+    <img src="assets/logo-generic.png" alt="logo" class="h-24">
+    <div class="text-blue-500 flex gap-2">
+      <button id="historico">
+        <i class="fa-solid fa-user"></i>
+      </button>
+      <button id="abrir-carrinho">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+    </div>
   </header>
+
   <main>
-    <section id="container-produto"></section>
+    <section id="container-produto" class="flex flex-wrap"></section>
   </main>
 
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
